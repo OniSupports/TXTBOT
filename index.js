@@ -81,8 +81,7 @@ bot.on('callback_query', async (ctx) => {
     const fileId = data.split('_')[1];
     userSessions[userId] = { fileId, waitingForReceipt: true };
     ctx.answerCbQuery();
-    await ctx.replyWithPhoto('https://i.ibb.co/8Lk8SchR/GCash-My-QR-23042025171742-PNG.jpg
-                             ', {
+    await ctx.replyWithPhoto('https://i.ibb.co/8Lk8SchR/GCash-My-QR-23042025171742-PNG.jpg',{
       caption: '📸 𝐀𝐅𝐓𝐄𝐑 𝐏𝐀𝐘𝐌𝐄𝐍𝐓, 𝐑𝐄𝐏𝐋𝐘 𝐇𝐄𝐑𝐄 𝐖𝐈𝐓𝐇 𝐘𝐎𝐔𝐑 𝐑𝐄𝐂𝐄𝐈𝐏𝐓.'
     });
   }
