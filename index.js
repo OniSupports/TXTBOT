@@ -47,18 +47,9 @@ const receiptSessions = {};
 
 bot.start((ctx) => {
   ctx.replyWithPhoto('https://i.ibb.co/b5tXZY01/IMG-20250424-165000-472.jpg', {
-    caption: '𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐎𝐍𝐈𝐒𝐒𝐔𝐏𝐎𝐑𝐓 𝐁𝐎𝐓 𝐒𝐇𝐎𝐏\n\n𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐓𝐗𝐓\n\n𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 𝐀𝐍𝐃 𝐏𝐀𝐒𝐒\n\n𝐓𝐎 𝐒𝐄𝐄 𝐓𝐇𝐄 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐓𝐗𝐓 𝐉𝐔𝐒𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐓𝐇𝐄 " /files " 𝐀𝐕𝐀𝐈𝐋 𝐍𝐎𝐖 𝐁𝐀𝐒𝐈𝐂 𝐓𝐎 𝐔𝐒𝐄 𝐉𝐔𝐒𝐓 𝐒𝐄𝐍𝐃 𝐓𝐇𝐄 𝐑𝐄𝐂𝐄𝐈𝐏𝐓 𝐓𝐎 𝐓𝐇𝐄 𝐁𝐎𝐓 𝐓𝐇𝐀𝐍𝐊 𝐘𝐎𝐔𝐔𝐔𝐔𝐔\n\n𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 @OniSupports 
-    PRICING OF TXT 
+    caption: '𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐎𝐍𝐈𝐒𝐒𝐔𝐏𝐎𝐑𝐓 𝐁𝐎𝐓 𝐒𝐇𝐎𝐏\n\n𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐓𝐗𝐓\n\n𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 𝐀𝐍𝐃 𝐏𝐀𝐒𝐒\n\n𝐓𝐎 𝐒𝐄𝐄 𝐓𝐇𝐄 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐓𝐗𝐓 𝐉𝐔𝐒𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐓𝐇𝐄 " /files " 𝐀𝐕𝐀𝐈𝐋 𝐍𝐎𝐖 𝐁𝐀𝐒𝐈𝐂 𝐓𝐎 𝐔𝐒𝐄 𝐉𝐔𝐒𝐓 𝐒𝐄𝐍𝐃 𝐓𝐇𝐄 𝐑𝐄𝐂𝐄𝐈𝐏𝐓 𝐓𝐎 𝐓𝐇𝐄 𝐁𝐎𝐓 𝐓𝐇𝐀𝐍𝐊 𝐘𝐎𝐔𝐔𝐔𝐔𝐔\n\n𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 @OniSupports PRICING OF TXT 
 50Php - 1k lines
-150Php - 2k lines
-300Php - 5k lines
-400Php - 7k lines
-500Php - 9k lines
-600Php - 10k lines
-700Php - 12k lines
-800Php - 13k lines
-900Php - 15k lines
-1000Php - 16k lines ' });
+150Php - 2k lines '});
 
   const userId = ctx.from.id;
   const username = ctx.from.username || 'N/A';
