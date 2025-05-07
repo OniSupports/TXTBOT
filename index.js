@@ -6,10 +6,10 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
-const BOT_TOKEN = '7751220873:AAES2itIfDg-uRxPd-7zKrt8rOBq9adkMdg';
+const BOT_TOKEN = '';
 const MONGO_URI = 'mongodb+srv://toshidev0:zcode22107@dbtxt.3dxoaud.mongodb.net/?retryWrites=true&w=majority&appName=DBTXT';
 const PAGE_SIZE = 5;
-const ADMIN_ID = '6344941266';
+const ADMIN_ID = '';
 
 const app = express();
 const bot = new Telegraf(BOT_TOKEN);
@@ -46,8 +46,8 @@ const userPages = {};
 const receiptSessions = {};
 
 bot.start((ctx) => {
-  ctx.replyWithPhoto('https://i.ibb.co/b5tXZY01/IMG-20250424-165000-472.jpg', {
-    caption: '𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐎𝐍𝐈𝐒𝐒𝐔𝐏𝐎𝐑𝐓 𝐁𝐎𝐓 𝐒𝐇𝐎𝐏\n\n𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐓𝐗𝐓\n\n𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 𝐀𝐍𝐃 𝐏𝐀𝐒𝐒\n\n𝐓𝐎 𝐒𝐄𝐄 𝐓𝐇𝐄 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐓𝐗𝐓 𝐉𝐔𝐒𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐓𝐇𝐄 " /files " 𝐀𝐕𝐀𝐈𝐋 𝐍𝐎𝐖 𝐁𝐀𝐒𝐈𝐂 𝐓𝐎 𝐔𝐒𝐄 𝐉𝐔𝐒𝐓 𝐒𝐄𝐍𝐃 𝐓𝐇𝐄 𝐑𝐄𝐂𝐄𝐈𝐏𝐓 𝐓𝐎 𝐓𝐇𝐄 𝐁𝐎𝐓 𝐓𝐇𝐀𝐍𝐊 𝐘𝐎𝐔𝐔𝐔𝐔𝐔\n\n𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 @OniSupports'});
+  ctx.replaywith, {
+    caption: '𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐁𝐎𝐓 𝐒𝐇𝐎𝐏\n\n𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐓𝐗𝐓\n\n𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 𝐀𝐍𝐃 𝐏𝐀𝐒𝐒\n\n𝐓𝐎 𝐒𝐄𝐄 𝐓𝐇𝐄 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐓𝐗𝐓 𝐉𝐔𝐒𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐓𝐇𝐄 " /files " 𝐀𝐕𝐀𝐈𝐋 𝐍𝐎𝐖 𝐁𝐀𝐒𝐈𝐂 𝐓𝐎 𝐔𝐒𝐄 𝐉𝐔𝐒𝐓 𝐒𝐄𝐍𝐃 𝐓𝐇𝐄 𝐑𝐄𝐂𝐄𝐈𝐏𝐓 𝐓𝐎 𝐓𝐇𝐄 𝐁𝐎𝐓 𝐓𝐇𝐀𝐍𝐊 𝐘𝐎𝐔𝐔𝐔𝐔𝐔\n\n𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 });
 
   const userId = ctx.from.id;
   const username = ctx.from.username || 'N/A';
@@ -80,7 +80,7 @@ bot.on('callback_query', async (ctx) => {
     const fileId = data.split('_')[1];
     userSessions[userId] = { fileId, waitingForReceipt: true };
     ctx.answerCbQuery();
-    await ctx.replyWithPhoto('https://i.ibb.co/8Lk8SchR/GCash-My-QR-23042025171742-PNG.jpg',{
+    await ctx.replyWithPhoto('',{
       caption: '📸 𝐀𝐅𝐓𝐄𝐑 𝐏𝐀𝐘𝐌𝐄𝐍𝐓, 𝐑𝐄𝐏𝐋𝐘 𝐇𝐄𝐑𝐄 𝐖𝐈𝐓𝐇 𝐘𝐎𝐔𝐑 𝐑𝐄𝐂𝐄𝐈𝐏𝐓.'
     });
   }
